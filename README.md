@@ -4,15 +4,18 @@ bof_test.sh
 This script provides functions for testing OS security
 flaws in buffer overflow field.
 Main modern techniques against buffer overflow are as follow:
+
     1.Address space layout randomization (ASLR)
     2.Executable space protection (W^X)
     3.Stack smashing protection (SSP)
+
 We will try to bypass these protections.
 
 Some tips for you:
-     1.Disable ASLR : echo 0 > /proc/sys/kernel/randomize_va_space
-     2.Disable W^X : execstack -s BINARY_FILE( If you have execstack command)
-     3.Disable SSP : gcc -fno-stack-protector XXX
+
+    1.Disable ASLR : echo 0 > /proc/sys/kernel/randomize_va_space
+    2.Disable W^X : execstack -s BINARY_FILE( If you have execstack command)
+    3.Disable SSP : gcc -fno-stack-protector XXX
 
 Author
 ------
@@ -42,6 +45,6 @@ Usage
 
 Tested on(32-bits machine)
 --------------------------
-    * Gentoo-3.7.10
+    * Gentoo (gentoo-sources-3.7.10)
     * Ubuntu-12.04
     * Fedora
