@@ -16,12 +16,12 @@ Some tips for you:
 
 Author
 ------
-    sysu-sec-lab
+    Zhibin Zhang <zzbthechaos@gmail.com>
 
 Dependencies
 ------------
     * ROPgadget
-	  Enter ROPgadget-master and install by:
+	  Enter ROPgadget and install by:
 	  	`sudo make && sudo make install`
     * gdb
 
